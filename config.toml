@@ -1,3 +1,14 @@
-baseurl = "http://replace-this-with-your-hugo-site.com/"
+baseurl = "http://nassor.me/"
 languageCode = "en-us"
-title = "My New Hugo Site"
+title = "Nassor Paulino da Silva"
+description = "Software Engineering log"
+
+[params]
+  gaCode = "UA-67778437-1"
+
+[[menu.main]]
+    name = "about"
+    pre = "<i class='fa fa-heart'></i>"
+    weight = -110
+    identifier = "about"
+    url = "/about/"
