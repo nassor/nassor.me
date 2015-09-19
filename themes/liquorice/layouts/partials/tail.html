@@ -1,0 +1,29 @@
+    <script type="text/javascript">
+    <!--
+    function toggle(id) {
+        var e = document.getElementById(id);
+        e.style.display == 'block' ? e.style.display = 'none' : e.style.display = 'block';
+    }
+    //-->
+    </script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ .Site.Params.gaCode }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script>
+        // Add target="_blank" to any article link
+        Array.prototype.slice.call(document.querySelectorAll('article section p a')).forEach(
+         function(link){
+            link.target = '_blank';
+         }
+        );
+    </script>
+    <script src="{{ .Site.BaseURL }}/js/prism.js"></script>
+    </body>
+</html>

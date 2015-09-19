@@ -1,0 +1,8 @@
+author = "Markus Eliasson (with Nassor Paulino da Silva customizations)"
+description = "Liquorice is a small black and white theme for Hugo."
+license = "MIT"
+licenselink = "https://github.com/nassor/liquorice/blob/master/LICENSE"
+name = "liquorice"
+source_repo = "https://github.com/nassor/liquorice"
+tags = ["", ""]
+min_version=0.14
