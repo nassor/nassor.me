@@ -158,6 +158,8 @@ func TestFindByAnything(t *testing.T) {
 	db.First(&event, &searchResult.Hits[0].ID)
 	if event.Name != "dotGo 2015" {
 		t.Error("Expected \"dotGo 2015\", Receive: ", event.Name)
+	} else {
+		t.Log("Should return an event with the name equal a", event.Name, checkMark)
 	}
 
 	idxDestroy()
