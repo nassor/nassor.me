@@ -21,7 +21,7 @@ The package is a mix of pure Go features and wrappers to some C/C++. In the arti
 
 <!--more-->
 
-To exemplify the use, I'll create an "Event Finder". I don't know your database preferences (I've been living inside MongoDB/Redis databases on the last 2 years), but I know something who everyone can run... SQLite!
+To exemplify the use, I'll create an "Event Finder". I don't know your database preferences (I've been living inside MongoDB/Redis databases on the last 2 years), but I know something who everyone can run... SQLite3!
 
 The objective is to create some events, create an index for them and retrieve some data using the Bleve Search.
 
@@ -41,7 +41,7 @@ mkdir -p ~/Workspace/Go/src/github.com/nassor/studies-blevesearch
 cd ~/Workspace/Go/src/github.com/nassor/studies-blevesearch
 ```
 
-Now let's download the package to our $GOPATH environment. The purpose isn't database implementation, so to not loose too much time working with the sql database, we will use the ORM package called [orm](https://github.com/jinzhu/gorm).
+Now let's download the package to our $GOPATH environment. The purpose isn't database implementation, so to not loose too much time working with the SQL database, we will use the ORM package called [gorm](https://github.com/jinzhu/gorm).
 
 ```bash
 go get github.com/blevesearch/bleve/... # bleve package
