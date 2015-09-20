@@ -121,7 +121,7 @@ func TestIndexing(t *testing.T) {
 	if err != nil {
 		t.Error("Wasn't possible create the index", err, ballotX)
 	} else {
-		t.Log("Should create a event index", checkMark)
+		t.Log("Should create an event index", checkMark)
 	}
 
 	idxDestroy()
@@ -138,7 +138,7 @@ func TestFindByAnything(t *testing.T) {
 	idx := idxCreate()
 	indexEvents(idx, eventList)
 
-	// We are looking to a Event with some string which match with dotGo
+	// We are looking to an Event with some string which match with dotGo
 	query := bleve.NewMatchQuery("dotGo")
 	searchRequest := bleve.NewSearchRequest(query)
 	searchResult, err := idx.Search(searchRequest)
