@@ -32,6 +32,9 @@
                     <section>
                         {{ .Content }}
                     </section>
+                    <section>
+                      {{ template "_internal/disqus.html" . }}
+                    </section>
                 </article>
             </div>
         </div>
